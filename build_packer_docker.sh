@@ -24,7 +24,9 @@ packer inspect packer_docker.json
 packer build packer_docker.json
 
 # test the Docker image w/ Serverspec
-rspec ./spec/Dockerfile_spec.rb
+#rspec ./spec/Dockerfile_ubuntu18.04.rb
+#rspec ./spec/Dockerfile_centos7.4.rb
+rspec ./spec/Dockerfile_amzlinux1.rb
 
 
 end=`date +%s`

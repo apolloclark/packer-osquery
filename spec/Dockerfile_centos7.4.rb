@@ -45,4 +45,9 @@ describe "Dockerfile" do
     it { should be_installed }
     its('version') { should eq ENV['PACKAGE_VERSION'] }
   end
+
+  describe command("osqueryd --version") do
+    its(:exit_status) { should eq 0 }
+    its(:stdout) { should contain '3.3.2' }
+  end
 end

@@ -11,7 +11,7 @@
   "builders": [
     {
       "type": "docker",
-      "image": "centos:7.6.1810",
+      "image": "amazonlinux:1",
       "commit": "true",
       "exec_user": "root",
       "run_command": [
