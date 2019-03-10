@@ -1,0 +1,8 @@
+# http://docs.ansible.com/ansible/latest/playbooks_variables.html#variable-file-separation
+---
+hostname: all
+
+# apolloclark.osquery
+osquery:
+  version: '3.3.2-1.linux'
+  enable_service: False
