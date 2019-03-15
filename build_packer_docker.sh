@@ -11,7 +11,7 @@ export IMAGE_NAME=${IMAGE_NAME:="centos7.6"}
 # remove previously built local images
 docker image rmi $DOCKER_USERNAME/$PACKAGE:$PACKAGE_VERSION-$IMAGE_NAME-$(date -u '+%Y%m%d') -f  || true
 docker image rmi $DOCKER_USERNAME/$PACKAGE:$PACKAGE_VERSION-$IMAGE_NAME -f  || true
-docker container rm $PACKAGE -f || true
+docker container rm $PACKAGE_VERSION-$IMAGE_NAME -f || true
 
 
 
