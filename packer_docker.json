@@ -20,7 +20,7 @@
         "-i",
         "-t",
         "--name",
-        "{{user `ansible_host`}}",
+        "{{user `package`}}-{{user `image_name`}}",
         "{{.Image}}",
         "/bin/bash"
       ],
